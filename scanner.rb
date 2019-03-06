@@ -69,11 +69,14 @@ EOS
 end
 
 custom_log = <<-EOS
-Started GET "/" for 127.0.0.1 at 2019-03-06 09:42:31 -0300
-Processing by Rails::WelcomeController#index as HTML
-  Rendering /Users/frankyston/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/railties-5.2.2/lib/rails/templates/rails/welcome/index.html.erb
-  Rendered /Users/frankyston/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/railties-5.2.2/lib/rails/templates/rails/welcome/index.html.erb (5.0ms)
-Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2017-08-20 20:53:10 +0900
+Processing by HomeController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+  Rendered layouts/_assets.html.erb (2.0ms)
+  Rendered layouts/_top.html.erb (2.6ms)
+  Rendered layouts/_about.html.erb (0.3ms)
+  Rendered layouts/_google_analytics.html.erb (0.4ms)
+Completed 200 OK in 79ms (Views: 78.8ms | ActiveRecord: 0.0ms)
 EOS
 
 scanner_logger = ScannerLogger.new(custom_log)
